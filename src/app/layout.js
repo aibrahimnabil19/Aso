@@ -1,5 +1,8 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Navbar from "../../components/Navbar";
+import Footer from "../../components/Footer";
+import Script from "next/script";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -19,10 +22,21 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen flex flex-col`}
       >
-        {children}
+        <Script
+          src="https://kit.fontawesome.com/ab3f556224.js"
+          crossOrigin="anonymous"
+          strategy="beforeInteractive"
+        />
+          <Navbar/>
+        
+          <main className="flex-1 max-w-5xl mx-auto w-full">
+            {children}
+          </main>
+          <Footer/>
       </body>
     </html>
   );
