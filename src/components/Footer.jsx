@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="bg-slate-700 text-white">
+    <footer className="bg-primary text-white">
       <div className="max-w-5xl mx-auto flex justify-between py-10">
         
         <section className="flex flex-col gap-7">
@@ -32,7 +32,7 @@ const Footer = () => {
           <div className="flex gap-2">
             <Link
               href={"#"}
-              className="inline-flex items-center justify-center w-7 h-7 rounded-full bg-gray-700 text-white"
+              className="inline-flex items-center justify-center w-7 h-7 rounded-full bg-chart-1 text-white"
               aria-label="Instagram"
             >
               <i className="fa-brands fa-instagram text-lg" />
@@ -40,7 +40,7 @@ const Footer = () => {
 
             <Link
               href={"#"}
-              className="inline-flex items-center justify-center w-7 h-7 rounded-full bg-gray-700 text-white"
+              className="inline-flex items-center justify-center w-7 h-7 rounded-full bg-chart-1 text-white"
               aria-label="Email"
             >
               <i className="fa-regular fa-envelope text-lg" />
@@ -48,7 +48,7 @@ const Footer = () => {
 
             <Link
               href={"#"}
-              className="inline-flex items-center justify-center w-7 h-7 rounded-full bg-gray-700 text-white"
+              className="inline-flex items-center justify-center w-7 h-7 rounded-full bg-chart-1 text-white"
               aria-label="Twitter / X"
             >
               <i className="fa-brands fa-x-twitter text-lg" />
@@ -56,7 +56,7 @@ const Footer = () => {
 
             <Link
               href={"#"}
-              className="inline-flex items-center justify-center w-7 h-7 rounded-full bg-gray-700 text-white"
+              className="inline-flex items-center justify-center w-7 h-7 rounded-full bg-chart-1 text-white"
               aria-label="YouTube"
             >
               <i className="fa-brands fa-youtube text-lg" />

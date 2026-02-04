@@ -3,14 +3,14 @@ import Link from "next/link"
 
 const Navbar = () => {
   return (
-    <header className="shadow-[0_4px_8px_rgba(0,0,0,0.8)] py-4">
+    <header className="shadow-[0_4px_8px_rgba(0,0,0,0.2)] py-4 bg-background">
         <div className="flex justify-between items-center mx-auto max-w-5xl">
             <Link href={"/"} className="text-3xl font-bold">Aso</Link>
 
             <div className='flex justify-between items-center gap-16'>
                 <Link href={"/"}>Home</Link>
+                <Link href={"/catalogue"}>Catalogue</Link>
                 <Link href={"/about"}>About</Link>
-                <Link href={"/portfolio"}>Portfolio</Link>
                 <Link href={"/contact"}>Contact Us</Link>
             </div>
         </div>

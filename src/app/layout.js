@@ -1,8 +1,9 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
-import Navbar from "../../components/Navbar";
-import Footer from "../../components/Footer";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 import Script from "next/script";
+import Hero from "../components/Hero";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -14,6 +15,11 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const jakarta = Plus_Jakarta_Sans({
+  variable: "--font-plus-jakarta-sans",
+  subsets: ["latin"]
+})
+
 export const metadata = {
   title: "Aso",
   description: "Created by Nabil",
@@ -24,7 +30,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen flex flex-col`}
+        className={`${geistSans.variable} ${geistMono.variable} ${jakarta.variable} antialiased min-h-screen flex flex-col`}
       >
         <Script
           src="https://kit.fontawesome.com/ab3f556224.js"
@@ -33,7 +39,7 @@ export default function RootLayout({ children }) {
         />
           <Navbar/>
         
-          <main className="flex-1 max-w-5xl mx-auto my-4 w-full">
+          <main className="flex-1 w-full font-['jakarta']">
             {children}
           </main>
           <Footer/>

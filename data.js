@@ -200,3 +200,4 @@ const outfits = [
     keywords: ["spring", "office", "business casual"]
   }
 ];
+export default outfits
