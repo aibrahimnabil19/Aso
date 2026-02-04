@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#263238] text-white">
+    <footer className="bg-slate-700 text-white">
       <div className="max-w-5xl mx-auto flex justify-between py-10">
         
         <section className="flex flex-col gap-7">
@@ -13,13 +13,6 @@ const Footer = () => {
               viewBox="0 0 31 21"
               fill="none"
                 stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
-
-                    {/* width="31"
-              height="21"
-              viewBox="0 0 31 21"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              aria-hidden="true" */}
 
                 <path d="M4.5 5.5h6v6h-6z"/>
                 <path d="M13.5 5.5h6v6h-6z"/>
@@ -103,7 +96,7 @@ const Footer = () => {
               <input
                 type="email"
                 placeholder="Your email address"
-                className="w-full rounded-md bg-gray-700/40 text-white placeholder:text-gray-300 px-4 py-2 pr-12 outline-none focus:ring-2 focus:ring-white/30"
+                className="w-full rounded-md bg-blue-50 text-black placeholder:text-gray-500 px-4 py-2 pr-12 outline-none focus:ring-2 focus:ring-white/30"
               />
 
               <button
