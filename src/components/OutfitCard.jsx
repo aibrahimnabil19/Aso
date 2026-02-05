@@ -11,29 +11,28 @@ import {
 import Image from "next/image"
 // import outfits from "@/data"
 
-const OutfitCard = () =>{
+const OutfitCard = ({ title, description, image, category }) =>{
   return (
     <Card className="relative mx-auto w-full max-w-sm pt-0">
       <div className="absolute inset-0 z-30 aspect-video bg-black/35" />
       <Image
-        src="https://ibiene.com/wp-content/uploads/2019/07/aso-oke-full.jpg"
-        alt="Event cover"
+        src={image}
+        alt={title}
         className="relative z-20 aspect-video w-full object-cover brightness-60 grayscale dark:brightness-40"
         height={400}
         width={400}
       />
       <CardHeader>
         <CardAction>
-          <Badge variant="secondary">Featured</Badge>
+          <Badge variant="secondary">{category}</Badge>
         </CardAction>
-        <CardTitle>Design systems meetup</CardTitle>
+        <CardTitle>{title}</CardTitle>
         <CardDescription>
-          A practical talk on component APIs, accessibility, and shipping
-          faster.
+          {description}
         </CardDescription>
       </CardHeader>
       <CardFooter>
-        <Button className="w-full">View Event</Button>
+        <Button className="w-full">Order Now</Button>
       </CardFooter>
     </Card>
   )

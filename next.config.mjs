@@ -10,8 +10,20 @@ const nextConfig = {
       },
       {
         protocol: 'https',
+        hostname: 'unsplash.com',
+      },
+      {
+        protocol: 'https',
         hostname: 'ibiene.com',
-      }
+      },
+      {
+        protocol: 'https',
+        hostname: 'freepik.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'www.freepik.com',
+      },
     ]
   }
 };

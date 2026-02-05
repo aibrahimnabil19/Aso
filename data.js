@@ -5,7 +5,7 @@ const outfits = [
     category: "Casual",
     season: "Summer",
     description: "Light t-shirt and shorts perfect for hot summer days.",
-    image: "https://images.unsplash.com/photo-1495121605193-b116b5b9c5c0",
+    image: "/casual1.jpg",
     price: 12000,
     keywords: ["casual", "summer", "light"]
   },
@@ -25,7 +25,7 @@ const outfits = [
     category: "Streetwear",
     season: "All",
     description: "Oversized hoodie and joggers with sneakers for a relaxed city look.",
-    image: "https://images.unsplash.com/photo-1520974735194-b0ae316ea2be",
+    image: "/street.jpg",
     price: 18000,
     keywords: ["streetwear", "hoodie", "joggers", "sneakers"]
   },
@@ -35,7 +35,7 @@ const outfits = [
     category: "Business Casual",
     season: "All",
     description: "Button‑up shirt with chinos and loafers for office days.",
-    image: "https://images.unsplash.com/photo-1520975914233-20b19fba396b",
+    image: "/office.jpg",
     price: 25000,
     keywords: ["business", "office", "smart casual"]
   },
@@ -45,7 +45,7 @@ const outfits = [
     category: "Formal",
     season: "All",
     description: "Dark shirt with tailored trousers for a classy dinner.",
-    image: "https://images.unsplash.com/photo-1520975914233-20b19fba396b",
+    image: "/eveningDinner.jpg",
     price: 32000,
     keywords: ["formal", "dinner", "evening"]
   },
@@ -65,7 +65,7 @@ const outfits = [
     category: "Sport",
     season: "All",
     description: "Breathable t‑shirt and leggings/shorts for gym workouts.",
-    image: "https://images.unsplash.com/photo-1517960413843-7e8e0e38d412",
+    image: "/gym.jpg",
     price: 10000,
     keywords: ["sport", "gym", "fitness"]
   },
