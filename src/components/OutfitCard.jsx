@@ -11,7 +11,11 @@ import {
 import Image from "next/image"
 // import outfits from "@/data"
 
-const OutfitCard = ({ title, description, image, category }) =>{
+const OutfitCard = ({ outfits }) =>{
+  // console.log(outfits.title)
+  const { title, description, category, image } = outfits
+  console.log(image)
+//const OutfitCard = ({ title, description, image, category }) =>{
   return (
     <Card className="relative mx-auto w-full max-w-sm pt-0">
       <div className="absolute inset-0 z-30 aspect-video bg-black/35" />
@@ -35,6 +39,7 @@ const OutfitCard = ({ title, description, image, category }) =>{
         <Button className="w-full">Order Now</Button>
       </CardFooter>
     </Card>
+    
   )
 }
 export default OutfitCard
